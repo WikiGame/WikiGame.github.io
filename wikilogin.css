@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ログイン</title>
+    <link rel="stylesheet" href="wikilogin.css">
+</head>
+
+<body>
+<header>
+    <h6 class ="heading">Wikipedia Game</h6>
+    <nav class="pc-nav">
+        <ul>
+            <li><a href="wikihome.html" class="btn btn-flat"><span>Home</span></a></li>
+            <li><a href="rules.html" class="btn btn-flat"><span>Rules</span></a></li>
+            <li><a href="competition.html" class="btn btn-flat"><span>Events</span></a></li>
+            <li><a href="wikilogin.html" class="btn btn-flat"><span>Login</span></a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <form name="login_form">
+            <center>
+                <h1 class="contact-title">ログイン</h1>
+                <p> 「ログイン」ボタンをクリックしてください。<br><br>※初めての方はアカウント登録が必要です。<br>アカウント登録は<a href="newaccount.html">こちら<a></p>
+            </center>
+            <center>
+                <div>
+                    <input class="box" type="id" name="id" placeholder="ユーザー名">
+                </div>
+                <br>
+                <div>
+                    <input class="box" type="password" name="pass" placeholder="パスワード" onchange="nextPage()">
+                </div>
+            </center>
+            <center class="login">
+                <a type="button" onClick="nextPage();" class="btn2 btn2-solid-gold">ログイン</a>
+            </center>
+
+        </form>
+
+        <!--ログイン処理-->
+        <script language="JavaScript" type="text/javascript">
+            function nextPage() {
+                if(document.login_form.id.value == "parent80" && document.login_form.pass.value == "483828"){
+                    location.href = "member.html";
+                } else{
+                    alert("ユーザー名又はパスワードが間違っています");
+                }
+            }
+        </script>
+  </main>
+
+</body>
+
+</html>
