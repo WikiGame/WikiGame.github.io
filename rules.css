@@ -1,0 +1,256 @@
+* {
+   box-sizing: border-box;
+}
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+   background-color: #000;
+   color: #fff;
+}
+header {
+   padding: 20px 4% 10px;
+   top: 0;
+   width: 100%;
+   background-color: #000;
+   align-items: center;
+}
+header{
+  display: flex;
+}
+h1, h6 {
+   margin: 0; padding: 0;
+   font-size: 22px;
+}
+.heading {	
+   text-decoration: none;
+   color: #fff;
+}
+nav {
+   margin: 0 5px 0 auto;
+   background-color: #000;
+}
+ul {
+   list-style: none;
+   margin: 0;
+   display: flex;
+}
+li {
+   margin: 0 0 0 15px;
+   font-size: 16px;
+}
+.btn,
+a.btn,
+button.btn {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5px;
+}
+a.btn-flat {
+  overflow: hidden;
+
+  padding: 10px 40px;
+
+  color: #fff;
+  border-radius: 0;
+  background: #000;
+}
+
+@media screen and (max-width: 1000px) {
+ a.btn-flat {
+  padding: 10px 30px;
+ }
+}
+@media screen and (max-width: 775px) {
+ a.btn-flat {
+  padding: 10px 20px;
+ }
+ .btn,
+ a.btn,
+ button.btn {
+   font-size: 11px;
+ }
+ h1,h6 {
+   font-size: 18px;
+ }
+}
+@media screen and (max-width: 625px) {
+ a.btn-flat {
+  padding: 10px 15px;
+ }
+ .btn,
+ a.btn,
+ button.btn {
+   font-size: 10px;
+ }
+ h1,h6 {
+   font-size: 14px;
+ }
+}
+@media screen and (max-width: 530px) {
+ a.btn-flat {
+   padding: 7px 10px;
+ }
+ .aboutgame1{
+   font-size: 11px;
+ }
+ table{
+   width: 85%;
+ }
+ li{
+   margin: 0 0 0 10px;
+ }
+}
+@media screen and (max-width: 500px) {
+ .aboutgame1{
+   font-size: 10.5px;
+ }
+ ul{
+   padding: 0;
+ }
+ .heading{
+   font-size: 12px;
+ }
+}
+
+a.btn-flat span {
+  position: relative;
+  z-index: 1;
+}
+
+a.btn-flat:before {
+  position: absolute;
+  top: 0;
+  left: calc(-100% + 1px);
+
+  width: 100%;
+  height: 100%;
+
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(0) translateY(0);
+  transform: translateX(0) translateY(0);
+
+  background-image: linear-gradient(90deg, #8a680c 0%, #ffce08 40%, #e1ce08 60%, #8a680c 100%);
+
+}
+
+a.btn-flat:after {
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 1px);
+
+  width: 100%;
+  height: 100%;
+
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(0) translateY(0);
+  transform: translateX(0) translateY(0);
+
+  background-image: linear-gradient(90deg, #8a680c 0%, #ffce08 40%, #e1ce08 60%, #8a680c 100%);
+}
+
+a.btn-flat:hover:before {
+  -webkit-transform: translateX(50%) translateY(0);
+  transform: translateX(50%) translateY(0);
+}
+
+a.btn-flat:hover:after {
+  -webkit-transform: translateX(-50%) translateY(0);
+  transform: translateX(-50%) translateY(0);
+}
+.introwords{
+    width: 95%;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.intro{
+    color: #fff;
+    margin: 5% 0 5% 4%;
+}
+.aboutgame{
+    padding: 16px 25px;
+    -webkit-box-shadow: 0 2px 14px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, .1);
+}
+
+.aboutgame:before,
+.aboutgame:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  content: '';
+  background-image: -webkit-linear-gradient(315deg, #704308 0%, #ffce08 40%, #e1ce08 60%, #704308 100%);
+  background-image: linear-gradient(135deg, #704308 0%, #ffce08 40%, #e1ce08 60%, #704308 100%);
+}
+
+.aboutgame:before {
+  top: 0;
+}
+
+.aboutgame:after {
+  bottom: 0;
+}
+.content{
+  margin: 5%;
+}
+.contentwords{
+  font-weight: 400;
+  line-height: 1.5;
+}
+@media screen and (max-width: 950px) {
+    .contentwords{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .contentwords{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 625px) {
+    .contentwords{
+        font-size: 12.5px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .contentwords{
+        font-size: 10.5px;
+    }
+}
+@media screen and (max-width: 410px) {
+    .contentwords{
+        font-size: 9.5px;
+    }
+}
+.partheading{
+  line-height: 2.5;
+}
+footer{
+  height: 150px;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+}
