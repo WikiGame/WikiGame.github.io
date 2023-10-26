@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ログイン</title>
+    <link rel="stylesheet" href="wikilogin.css">
+</head>
+
+<body>
+<header>
+    <h6 class ="heading">Wikipedia Game</h6>
+    <nav class="pc-nav">
+        <ul>
+            <li><a href="wikihome.html" class="btn btn-flat"><span>Home</span></a></li>
+            <li><a href="rules.html" class="btn btn-flat"><span>Rules</span></a></li>
+            <li><a href="competition.html" class="btn btn-flat"><span>Events</span></a></li>
+            <li><a href="wikilogin.html" class="btn btn-flat"><span>Login</span></a></li>
+        </ul>
+    </nav>
+  </header>
+  <main>
+    <form name="login_form">
+            <center>
+                <h1 class="contact-title">アカウント作成</h1>
+                <p> 「アカウント作成」ボタンをクリックしてください。</p>
+            </center>
+            <center>
+                <div>
+                    <input class="box" type="id" name="id" placeholder="メールアドレス">
+                </div>
+            </center>
+            <center class="login">
+                <a type="button" onClick="nextPage();" class="btn2 btn2-solid-gold">アカウント作成
+                </a>
+            </center>
+
+        </form>
+        <!--ログイン処理-->
+        <script language="JavaScript" type="text/javascript">
+            function nextPage() {
+                if(document.login_form.id.value != ""){
+                    function sleep(waitMsec) {
+                      var startMsec = new Date();
+                      while (new Date() - startMsec < waitMsec);
+                    }
+                    sleep(5000);
+                    alert("アカウントの準備が整いました。")
+                    alert("あなたのユーザー名はparent80,パスワードは483828です。保存をお願いします。")
+                    location.href = "wikilogin.html";
+                } else{
+                  alert("メールアドレスを入力してください。");
+                }
+            }
+        </script>
+  </main>
+
+</body>
+
+</html>
