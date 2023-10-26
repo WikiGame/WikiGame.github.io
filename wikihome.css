@@ -316,6 +316,7 @@ a.btn-flat:hover:after {
 }
 .iframe{
   margin: 20px;
+  width: 85%;
   height: 225px;
 }
 footer{
