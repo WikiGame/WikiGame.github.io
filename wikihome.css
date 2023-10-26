@@ -225,6 +225,16 @@ a.btn-flat:hover:after {
   float: right;
   margin-right: 6%;
 }
+@media screen and (min-width: 1500px) {
+  .imageheading{
+     width: 30%;
+   }
+}
+@media screen and (min-width: 1300px) {
+  .imageheading{
+     width: 35%;
+   }
+}
 @media screen and (max-width: 875px) {
   .introwords,.aboutgame1{
     width: 95%;
