@@ -22,8 +22,8 @@
   <main>
     <form name="login_form">
             <center>
-                <h1 class="contact-title">アカウント作成</h1>
-                <p> 「アカウント作成」ボタンをクリックしてください。</p>
+                <h1 class="contact-title">現在アカウント作成はできません。ゲスト登録のみ受け付けています。</h1>
+                <p> 「ゲスト登録」ボタンをクリックしてください。</p>
             </center>
             <center>
                 <div>
@@ -31,7 +31,7 @@
                 </div>
             </center>
             <center class="login">
-                <a type="button" onClick="nextPage();" class="btn2 btn2-solid-gold">アカウント作成
+                <a type="button" onClick="nextPage();" class="btn2 btn2-solid-gold">ゲスト登録
                 </a>
             </center>
 
@@ -40,14 +40,14 @@
         <script language="JavaScript" type="text/javascript">
             function nextPage() {
                 if(document.login_form.id.value != ""){
-                    alert("アカウント準備中・・・")
+                    alert("ゲストアカウント準備中・・・")
                     function sleep(waitMsec) {
                       var startMsec = new Date();
                       while (new Date() - startMsec < waitMsec);
                     }
-                    sleep(5000);
-                    alert("アカウントの準備が整いました。")
-                    alert("あなたのユーザー名はparent80,パスワードは483828です。保存をお願いします。")
+                    sleep(3000);
+                    alert("ゲストアカウントの準備が整いました。")
+                    alert("ユーザー名はguest,パスワードはpasswordです。保存をお願いします。")
                     location.href = "wikilogin.html";
                 } else{
                   alert("メールアドレスを入力してください。");
