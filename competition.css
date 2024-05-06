@@ -185,11 +185,11 @@ a.btn-flat:hover:after {
     margin: 20px 0;
     padding: 20px 0;
     border: 1px dashed #000;
-    height: 1050px;
+    height: ６５0px;
 }
 @media screen and (max-width: 985px) {
   .topics{
-    height: 1450px;
+    height: 850px;
   }
 }
 .left{
