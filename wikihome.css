@@ -283,6 +283,12 @@ a.btn-flat:hover:after {
   .left,.widthcontrol{
     font-size: 18px;
   }
+  .topics{
+    height: 750px;
+  }
+  .topics2{
+    height: 450px;
+  }
 }
 @media screen and (max-width: 550px) {
   .left,.widthcontrol{
@@ -292,6 +298,12 @@ a.btn-flat:hover:after {
 @media screen and (max-width: 450px) {
   .left,.widthcontrol{
     font-size: 14px;
+  }
+  .topics{
+    height: 550px;
+  }
+  .topics2{
+    height: 450px;
   }
 }
 @media screen and (max-width: 400px) {
