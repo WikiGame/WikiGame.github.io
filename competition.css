@@ -192,6 +192,11 @@ a.btn-flat:hover:after {
     height: 850px;
   }
 }
+@media screen and (max-width: 700px) {
+  .topics{
+    height: 600px;
+  }
+}
 .left{
     text-align: left;
     margin-left: 4%;
